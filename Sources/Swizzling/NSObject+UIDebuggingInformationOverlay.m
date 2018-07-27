@@ -14,7 +14,7 @@
 @import UIKit;
 @import Foundation;
 @import ObjectiveC.runtime;
-#import <CocoaDebug/CocoaDebug-Swift.h> 
+#import <CocoaDebug/CocoaDebug-Swift.h>
 
 @interface NSObject()
 - (void)_setWindowControlsStatusBarOrientation:(BOOL)orientation;
@@ -49,7 +49,7 @@
         // Fallback on earlier versions
     }
     
-    CocoaDebug.enable()
+    [CocoaDebug enable];
 }
 
 + (void)swizzleOriginalSelector:(SEL)originalSelector withSizzledSelector:(SEL)swizzledSelector forClass:(Class)class isClassMethod:(BOOL)isClassMethod
