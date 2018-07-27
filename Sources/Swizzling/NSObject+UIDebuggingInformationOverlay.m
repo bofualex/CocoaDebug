@@ -14,6 +14,7 @@
 @import UIKit;
 @import Foundation;
 @import ObjectiveC.runtime;
+#import <CocoaDebug/CocoaDebug-Swift.h> 
 
 @interface NSObject()
 - (void)_setWindowControlsStatusBarOrientation:(BOOL)orientation;
