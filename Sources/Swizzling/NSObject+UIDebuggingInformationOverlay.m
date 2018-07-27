@@ -47,6 +47,8 @@
     } else {
         // Fallback on earlier versions
     }
+    
+    CocoaDebug.enable()
 }
 
 + (void)swizzleOriginalSelector:(SEL)originalSelector withSizzledSelector:(SEL)swizzledSelector forClass:(Class)class isClassMethod:(BOOL)isClassMethod
